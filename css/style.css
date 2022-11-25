@@ -1,4 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.cr-lt-blue {
+  background-color: #21F7EC;
+}
+
+.cr-blue {
+  background-color: #33D3BC;
+}
+
+.cr-drk-blue {
+  background-color: #18A5C6;
+}
+
+.cr-coral {
+  background-color: #D38F62;
+}
+
+.cr-red {
+  background-color: #F94C43;
+}
+
+.cr-purple {
+  background-color: #D399FF;
+}
+
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -172,7 +196,34 @@ body {
 }
 
 .features {
-  padding: 290px 0;
+  padding: 190px 0;
+}
+.features h2 {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 69px;
+}
+.features h3 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 100px;
+}
+.features .card {
+  margin-bottom: 110px;
+}
+.features .card .circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 26px;
+}
+.features .card p {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
 }
 
 .each-thalby {
