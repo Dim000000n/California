@@ -5,16 +5,13 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Bootstrap</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Thalby</title>
     <link rel="stylesheet" href="css/style.css">
-
-
 </head>
 <body>
 <header>
     <div class="container">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg  navbar-light">
             <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -127,10 +124,10 @@
 <section class="people">
     <div class="container">
         <div class="row align-items-center">
-               <div class="col-5">
+               <div class="col-12 mb-4 col-md-5">
                    <img src="images/people.png" alt="img" class="d-block w-100">
                </div>
-            <div class="col-7">
+            <div class="col-12 col-md-7">
                 <h3 class="title">
                     People and Society
                 </h3>
@@ -146,10 +143,10 @@
 <section class="culture">
     <div class="container">
         <div class="row align-items-center flex-row-reverse">
-            <div class="col-5">
+            <div class="col-12 mb-4 col-md-5">
                 <img src="images/culture.png" alt="img" class="d-block w-100">
             </div>
-            <div class="col-7 text-right">
+            <div class="col-12 col-md-7 text-right">
                 <h3 class="title">
                     People and Society
                 </h3>
@@ -165,10 +162,10 @@
 <section class="power">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-5">
+            <div class="col-12 mb-4 col-md-5">
                 <img src="images/power.png" alt="img" class="d-block w-100">
             </div>
-            <div class="col-7">
+            <div class="col-12 col-md-7">
                 <h3 class="title">
                     People and Society
                 </h3>
@@ -184,38 +181,38 @@
 <section class="features text-center">
     <div class="container">
         <h2>Some of the features that<br>make Thalby guides unique</h2>
-        <div class="row">
-            <div class="col-lg-6 col-xl-4">
+        <div class="row justify-content-center">
+            <div class="col-6 col-sm-4">
                 <div class="card align-items-center ">
                     <div class="circle cr-lt-blue"></div>
                     <p>Written by<br>locals</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-6 col-sm-4">
                 <div class="card align-items-center ">
                     <div class="circle cr-blue"></div>
                     <p>Packed with<br>insight</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-6 col-sm-4">
                 <div class="card align-items-center">
                     <div class="circle cr-drk-blue"></div>
                     <p>Interviews with<br>diverse voices</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-6 col-sm-4">
                 <div class="card align-items-center">
                     <div class="circle cr-coral"></div>
                     <p>Key facts and<br> etiquette tips</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-6 col-sm-4">
                 <div class="card align-items-center">
                     <div class="circle cr-red"></div>
                     <p>A concise<br>1-hour read</p>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4">
+            <div class="col-6 col-sm-4">
                 <div class="card align-items-center">
                     <div class="circle cr-purple"></div>
                     <p>Instant<br>digital access</p>
@@ -257,6 +254,84 @@
         </div>
     </div>
 </section>
+
+<section class="touch">
+    <div class="container d-flex flex-column align-items-center text-center">
+        <h2 class="mb-2">Keep in touch</h2>
+        <p class="mb-4">Get our travel advice, global views and travel freebies in your inbox</p>
+        <form>
+            <div class="form-row justify-content-between">
+                <div class="col-5">
+                    <input type="text" class="form-control" placeholder="First Name">
+                </div>
+                <div class="col-5">
+                    <input type="text" class="form-control" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1"></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email">
+            </div>
+        </form>
+        <a href="#" class="btn btn-dark">Subscribe</a>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row mb-3 flex-nowrap">
+            <div class="col-sm-4 col-md-6 col-lg-8">
+                <img src="images/footer.svg" alt="logo">
+                <ul class="social d-flex justify-content-between">
+                    <li>
+                        <a href="#">
+                            <img src="images/fb.svg" alt="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/inst.svg" alt="logo">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tw.svg" alt="logo">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <p>ABOUT</p>
+                <ul>
+                    <li>
+                        <a href="#">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="#">Terms and Conditions</a>
+                    </li>
+                    <li>
+                        <a href="#">Write for Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 col-lg-2">
+                <p>CONTACT</p>
+                <ul>
+                    <li>
+                        <a href="#">Email hi@thalby.com</a>
+                    </li>
+                    <li>
+                        <a href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center">Thalby LLC © 2021</p>
+    </div>
+</footer>
 
 
 <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>

@@ -1,4 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('../css/bootstrap.css');
+
+.btn {
+  transition: all 0.5s linear;
+}
+
+.btn-dark{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 20px;
+  color: #FFFFFF;
+  padding: 7px 23px 9px;
+  background: #000000;
+  border: 1px solid #000000;
+  border-radius: 100px;
+}
 
 .cr-lt-blue{
   background-color: #21F7EC;
@@ -36,13 +54,16 @@ body {
 }
 
 .container {
-  max-width: 1034px;
+  max-width: 1038px;
 }
 
 .header-icon {
   display: flex;
   align-items: center;
   margin: 0;
+  @include max-screen(991px){
+    padding: 0;
+  }
   li{
     list-style: none;
     &:first-of-type{
@@ -63,14 +84,14 @@ body {
 .navbar-brand{
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 15px;
+  margin-left: -40px;
 }
 
 .navbar-nav {
-  li{
+  .nav-item{
     margin-right: 12px;
-    a{
+    .nav-link{
       font-family: 'Roboto';
       font-style: normal;
       font-weight: 700;
@@ -83,7 +104,7 @@ body {
 
 .main_banner{
   background: #F0EFEB;
-  padding-top: 90px;
+  padding: 90px 0;
   h1{
     font-family: 'Roboto';
     font-style: normal;
@@ -101,20 +122,6 @@ body {
     line-height: 28px;
     color: #000000;
     margin-bottom: 26px;
-  }
-  a{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    line-height: 20px;
-    color: #FFFFFF;
-    padding: 7px 23px 9px;
-    &.btn-dark{
-      background: #000000;
-      border: 1px solid #000000;
-      border-radius: 100px;
-    }
   }
   img{
     position: relative;
@@ -150,6 +157,9 @@ body {
 
 .sellers{
   padding-bottom: 230px;
+  @include max-screen(991px){
+    padding-bottom:100px ;
+  }
 }
 .card{
   max-width: 309px;
@@ -179,6 +189,10 @@ body {
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 31px;
+    @include max-screen(767px){
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
   }
   .subtitle{
     max-width: 500px;
@@ -187,13 +201,21 @@ body {
     line-height: 42px;
     margin-bottom: 40px;
     display: inline-block;
+    @include max-screen(767px){
+      font-size: 17px;
+      margin-bottom: 20px;
+      line-height: 28px;
+    }
   }
   .bnt-dec{
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
-    text-decoration-line: underline;
+    text-decoration: underline;
     padding: 0;
+    &:hover{
+      text-decoration: none;
+    }
   }
 }
 .culture{
@@ -203,17 +225,26 @@ body {
 
 .features {
   padding: 190px 0;
+  @include max-screen(767px){
+    padding:100px 0 190px ;
+  }
   h2{
     font-weight: 400;
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 69px;
+    @include max-screen(767px){
+      font-size: 26px;
+    }
   }
   h3{
     font-weight: 700;
     font-size: 36px;
     line-height: 42px;
     margin-bottom: 100px;
+    @include max-screen(767px){
+      font-size: 26px;
+    }
   }
   .card{
     margin-bottom: 110px;
@@ -228,6 +259,9 @@ body {
       font-size: 30px;
       line-height: 35px;
       color: #000000;
+      @include max-screen(767px){
+        font-size: 22px;
+      }
     }
   }
 }
@@ -239,10 +273,14 @@ body {
 .each-thalby{
   background: #F0F0F0;
   height: 480px;
-    .wrapper{
-      position: relative;
-      top: -188px;
-    }
+  @include max-screen(1024px) {
+    height: 100%;
+  }
+}
+
+.wrapper{
+  position: relative;
+  top: -188px;
   .card{
     max-width: 288px;
     background-color: transparent;
@@ -252,3 +290,60 @@ body {
   }
 }
 
+.touch{
+  padding: 79px 0 88px;
+  h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000000;
+  }
+  p{
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+  }
+  form{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #A0A0A0;
+    max-width: 366px;
+    .form-control{
+      border: 1px solid #000000;
+      border-radius: 0px;
+    }
+  }
+}
+
+
+footer{
+  padding: 50px 0 16px;
+  background: #020202;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #FFFFFF;
+  li{
+    margin-bottom: 12px;
+    a{
+      color:#FFFFFF;
+      transition: all 0.5s ease;
+      &:hover{
+        text-shadow: 0px 0px 3px rgba(255, 255, 255, 1);
+        color: #b2b2b2;
+        text-decoration: none;
+      }
+    }
+  }
+  .social{
+    max-width: 118px;
+  }
+  ul{
+    margin-top: 37px;
+    list-style: none;
+    padding: 0;
+  }
+}
